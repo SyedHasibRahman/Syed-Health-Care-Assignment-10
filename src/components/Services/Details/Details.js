@@ -3,6 +3,8 @@ import { useParams } from 'react-router';
 
 const Details = () => {
     const { DetailsId } = useParams();
+    const [isLoading, setIsLoading] = useState(true);
+
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('/syedhealthcare.json')
@@ -16,7 +18,7 @@ const Details = () => {
     return (
         <div>
             <h2>Details {detaiId}</h2>
-            <h2>Details  </h2>
+            <h2>Details { } </h2>
         </div>
     );
 };
