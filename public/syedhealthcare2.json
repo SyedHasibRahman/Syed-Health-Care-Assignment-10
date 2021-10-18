@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Pediatrics",
+    "price": 2000,
+    "info": "Pediatrics, Syed HealthCare Center, we partner with families to deliver expert, compassionate care to infants, children and teens.",
+    "description": "At UCLA Health, we partner with families to deliver expert, compassionate care to infants, children and teens.",
+    "img": "https://i.ibb.co/1Tggdg5/br-Optometrist.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cardiology",
+    "price": 3000,
+    "info": "Our comprehensive heart services include general and preventive cardiology, cardiac testing and imaging, specialized cardiology and cardiac surgery.",
+    "description": "At UCLA Health, we partner with families to deliver expert, compassionate care to infants, children and teens.",
+    "img": "https://i.ibb.co/jyGcGMt/cancercare.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Neurosurgery",
+    "price": 4000,
+    "info": "Our top-rated neurosurgeons use advanced imaging and surgical techniques to treat neurological conditions, such as brain tumors and traumatic brain injury.",
+    "description": "At UCLA Health, we partner with families to deliver expert, compassionate care to infants, children and teens.",
+    "img": "https://i.ibb.co/rk6Vb4W/Cardiology.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Cancer Care",
+    "price": 5000,
+    "info": "UCLA Health patients can expect comprehensive and individualized cancer care, delivered in convenient locations across Southern California.",
+    "description": "At UCLA Health, we partner with families to deliver expert, compassionate care to infants, children and teens.",
+    "img": "https://i.ibb.co/g4D5vQ4/General-Dentist.jpg"
+  },
+  {
+    "id": 5,
+    "name": "General Dentist",
+    "price": 6000,
+    "info": "General dentists prevent, evaluate, diagnose, and treat diseases of the oral cavity, as well as maintain the function and appearance of the teeth.",
+    "description": "General dentists prevent, evaluate, diagnose, and treat diseases of the oral cavity, as well as maintain the function and appearance of the teeth. Many oral diseases and abnormalities can indicate other diseases. A general dentist may refer patients to their physician or a specialist for further evaluation, or vice versa for treatment. Our residents come from all parts of the world, bringing you a global expertise coupled with the cutting edge research and knowledge of the University of Rochester Medical Center. There is no dental concern too small or large for the professionals at Eastman Dental's General Dentistry Division.",
+    "img": "https://i.ibb.co/pWKZXMm/Neuro-Surgery.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Optometrist",
+    "price": 7000,
+    "info": "When a person makes an appointment to see an eye doctor, they may consult with an ophthalmologist, an optometrist, or an optician. It also discusses the roles of other",
+    "description": "There are three different types of eye care practitioner: optometrists, opticians, and ophthalmologists. Each has a different level of training and expertise, and each will provide different levels of care. This article reviews the differences between the types of eye care professional. It also discusses the roles of other eye care practitioners, including nurses, medical assistants, and technicians.",
+    "img": "https://i.ibb.co/HgLtm5c/Optometrist.jpg"
+  }
+]

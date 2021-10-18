@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useServices from '../../../hooks/useServices';
 import Service from '../Service/Service';
 
 const Services = () => {
-    const [services, setServices] = useState([]);
-    useEffect(() => {
-        fetch('syedhealthcare.json')
-            .then(res => res.json())
-            .then(data => setServices(data.services))
-    }, []);
+    const [services] = useServices();
     return (
         <div className="container">
 
