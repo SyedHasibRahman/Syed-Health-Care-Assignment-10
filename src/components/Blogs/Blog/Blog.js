@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Blog = (props) => {
-    const { id, img, name, description } = props.blog;
-    console.log(props.blog);
+    const { img, name, description } = props.blog;
+    // console.log(props.blog);
     return (
         <div>
             <div className="col service-card mb-5">

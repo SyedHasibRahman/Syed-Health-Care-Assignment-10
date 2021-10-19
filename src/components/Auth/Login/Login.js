@@ -26,12 +26,12 @@ const Login = () => {
 
     const handleEmailchange = e => {
         setEmail(e.target.value);
-        console.log(e.target.value);
+        // console.log(e.target.value);
     }
 
     const handlePasswordChange = e => {
         setPassword(e.target.value);
-        console.log(e.target.value);
+        // console.log(e.target.value);
     }
 
     const signInByEmailPassword = (e) => {
@@ -42,7 +42,7 @@ const Login = () => {
                 const user = result.user;
                 history.push(redirect_uri);
                 console.log(user);
-                // ...
+                // ... 
             })
             .catch((error) => {
                 setError(error.message);
