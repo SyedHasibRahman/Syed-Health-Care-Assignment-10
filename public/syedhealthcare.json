@@ -49,54 +49,54 @@
       "img": "https://i.ibb.co/HgLtm5c/Optometrist.jpg"
     }
   ],
-  "blog": [
+  "blogs": [
     {
       "id": 1,
-      "name": "Healthy Meal Plan",
+      "name": "ACE Insights Blog",
       "price": 2000,
       "time": 2,
-      "description": "How we dream about our future",
-      "img": "https://i.ibb.co/JQVpDBX/lunch1.png"
+      "description": "The American Council on Exercise’s blog has fitness articles on a variety of topics such as yoga, strength training, and exercises for beginners. Articles are backed by guidelines and recommendations from the American Council on Exercise.",
+      "img": "https://i.ibb.co/3FBC1Kh/Blog-1.jpg"
     },
     {
       "id": 2,
-      "name": "Fried Chiken Bento",
+      "name": "The Art of Healthy Living",
       "price": 3000,
       "time": 2,
-      "description": "How we dream about our future",
-      "img": "https://i.ibb.co/LYByKkg/lunch2.png"
+      "description": "The Art of Healthy Living offers fitness articles related to subjects such as exercise supplements and high-intensity interval training. It also covers food and nutrition topics and general health and well-being trends.",
+      "img": "https://i.ibb.co/5LvVn53/Blog-2.jpg"
     },
     {
       "id": 3,
-      "name": "Tarragon Rubbed Salmon",
+      "name": "Nerd Fitness",
       "price": 4000,
       "time": 2,
-      "description": "How we dream about our future",
-      "img": "https://i.ibb.co/ZYGnvfR/lunch3.png"
+      "description": "This blog serves up health and fitness advice from a self-described “full-time team of 25 supportive nerds (and a massive worldwide community).” Besides a fun and engaging blog, Nerd Fitness offers an online coaching program, at-home workouts, and free resources.",
+      "img": "https://i.ibb.co/VHHD1Cj/Blog-3.jpg"
     },
     {
       "id": 4,
-      "name": "Indian Lunch",
+      "name": "MyFitnessPal Blog",
       "price": 5000,
       "time": 2,
-      "description": "How we dream about our future",
-      "img": "https://i.ibb.co/yBqJg2r/lunch4.png"
+      "description": "This is the blog of nutrition tracking app MyFitnessPal. Get healthy recipes, nutrition advice, weight loss tips, fitness inspiration, and more.Besides a fun and engaging blog, Nerd Fitness offers an online coaching program, at-home workouts, and free resources.",
+      "img": "https://i.ibb.co/mbkWYRP/Blog-4.jpg"
     },
     {
       "id": 5,
-      "name": "Beef Steak",
+      "name": "Shape",
       "price": 6000,
       "time": 2,
-      "description": "How we dream about our future",
-      "img": "https://i.ibb.co/7b6SM6N/lunch5.png"
+      "description": "The website for fitness magazine Shape has tons of free articles, including step-by-step workouts, nutrition advice, and mental health insights. There are also weight-loss tips and plans and videos.",
+      "img": "https://i.ibb.co/0Yr82gT/Blog-5.jpg"
     },
     {
       "id": 6,
-      "name": "Honey Soy Glazed Salmon with Peppers",
+      "name": "Well + Good",
       "price": 7000,
       "time": 2,
-      "description": "How we dream about our future",
-      "img": "https://i.ibb.co/Vw69qFM/lunch6.png"
+      "description": "Well + Good is a wellness blog with articles on fitness, nutrition, beauty, and more. The journalism-based fitness site features interviews with fitness experts, practical fitness tips, and videos to walk blog readers through workouts.",
+      "img": "https://i.ibb.co/f4wYp96/Blog-6.jpg"
     }
   ],
   "doctors": [
