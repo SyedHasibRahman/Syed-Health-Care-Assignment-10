@@ -38,16 +38,16 @@ const Footer = () => {
                                 <h6 className="text-uppercase fw-bold">Service</h6>
                                 <hr />
                                 <p>
-                                    <Link to="#" className="text-white">Pediatrics</Link>
+                                    <Link to="/Services" className="text-white">Pediatrics</Link>
                                 </p>
                                 <p>
-                                    <Link to="#" className="text-white">Cardiology</Link>
+                                    <Link to="/Services" className="text-white">Cardiology</Link>
                                 </p>
                                 <p>
-                                    <Link to="#" className="text-white">Neurosurgery</Link>
+                                    <Link to="#/Services" className="text-white">Neurosurgery</Link>
                                 </p>
                                 <p>
-                                    <Link to="#" className="text-white">Cancer Care</Link>
+                                    <Link to="/Services" className="text-white">Cancer Care</Link>
                                 </p>
                             </div>
                             {/* <!-- Grid column -->  */}
@@ -58,16 +58,16 @@ const Footer = () => {
                                 <h6 className="text-uppercase fw-bold">Menu</h6>
                                 <hr />
                                 <p>
-                                    <Link to="#" className="text-white">Services</Link>
+                                    <Link to="/Services" className="text-white">Services</Link>
                                 </p>
                                 <p>
-                                    <Link to="#" className="text-white">Blog's</Link>
+                                    <Link to="/Blogs" className="text-white">Blog's</Link>
                                 </p>
                                 <p>
-                                    <Link to="#" className="text-white">About Us</Link>
+                                    <Link to="/AboutUs" className="text-white">About Us</Link>
                                 </p>
                                 <p>
-                                    <Link to="#" className="text-white">Contact Us</Link>
+                                    <Link to="/Contactus" className="text-white">Contact Us</Link>
                                 </p>
                             </div>
                             {/* <!-- Grid column --> */}
