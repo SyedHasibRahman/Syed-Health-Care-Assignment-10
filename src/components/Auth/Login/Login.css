@@ -1,0 +1,24 @@
+main .card {
+    background-color: #2b3a5e;
+    color: white;
+  }
+  
+  
+  h3 {
+    font-family: Times New Roman;
+    font-weight: bold;
+  }
+  hr {
+    border-bottom: solid white 1px;
+  }
+  
+  
+  input {
+    background-color: #3475 !important;
+    color: white !important;
+  }
+  
+  ::placeholder {
+    color: white !important;
+  }
+  

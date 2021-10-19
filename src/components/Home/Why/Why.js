@@ -10,7 +10,7 @@ const Why = () => {
                     <div className="col">
                         <h2>Why Choose Us?</h2>
                         <hr />
-                        <Link className="btn btn-danger" to="#">About Us</Link>
+                        <Link className="btn btn-danger" to="/Aboutus">About Us</Link>
                     </div>
                     <div className="col">
                         <p><small>The Syed healthcare system is the world’s best, according to the World Health Organization. By all measurements, from the ratio of doctors to patients to the length of wait times, Syed healthcare consistently delivers strong results.</small></p>

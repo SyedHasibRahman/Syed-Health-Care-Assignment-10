@@ -1,26 +1,45 @@
-import React, { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
+import useServices from '../../../hooks/useServices';
 
 const Details = () => {
-    const { DetailsId } = useParams();
-    const [isLoading, setIsLoading] = useState(true);
 
-    const [services, setServices] = useState([]);
+    let { id } = useParams();
+    const dId = parseFloat(id)
+    const [services] = useServices();
+    const [detail, setDetail] = useState({})
+
     useEffect(() => {
-        fetch('/syedhealthcare.json')
-            .then(res => res.json())
-            .then(data => setServices(data.services))
-    }, []);
-    const detaiId = parseFloat(DetailsId) - 1;
-    console.log(services[detaiId]);
-    const service = services[detaiId];
-    // console.log(service.name);
+        const foundDetails = services.find(service => service.id === dId)
+        setDetail(foundDetails);
+    }, [services, dId])
     return (
-        <div>
-            <h2>Details {detaiId}</h2>
-            <h2>Details { } </h2>
+        <div className="container">
+            <div className="row pt-5 ">
+                <div className="col-md-6">
+                    <img className="img-fluid" src={detail?.img} alt="" />
+                </div>
+                <div className="col-md-6">
+                    <h2 className="text-danger">{detail?.name}  </h2>
+                    <hr className="border-danger border-3" />
+                    <hr className="border-danger border-3" />
+                    <p>{detail?.description}</p>
+                    <div className="row">
+                        <div className="col-md-6 mb-3">
+                            <button className="btn btn-info text-white ">Visiting Fee: ${detail?.price}</button></div>
+                        <div className="col-md-6">
+                            <Link to="/services"><button className="btn btn-danger text-white ">Services </button></Link>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
+
+
 
 export default Details;
