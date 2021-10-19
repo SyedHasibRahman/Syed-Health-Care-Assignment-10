@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 
 const Registration = () => {
     const auth = getAuth();
@@ -46,12 +46,19 @@ const Registration = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 const user = result.user;
+                verifyEmail();
                 history.push(redirect_uri);
                 console.log(user);
                 setError('');
             })
             .catch(error => {
                 setError(error.message);
+            })
+    }
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+            .then(result => {
+                console.log(result);
             })
     }
     return (

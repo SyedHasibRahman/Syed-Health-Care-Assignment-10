@@ -3,7 +3,7 @@ import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 
 
 const Login = () => {
@@ -48,6 +48,16 @@ const Login = () => {
                 setError(error.message);
             });
     }
+    const handleResetPassword = () => {
+        sendPasswordResetEmail(auth, email)
+            .then((result) => {
+                // Password reset email sent!
+                // ..
+            })
+            .catch((error) => {
+                setError(error.message)
+            });
+    }
 
     return (
         <div>
@@ -81,6 +91,7 @@ const Login = () => {
 
                             </form>
                             <button onClick={handleGoogleLogin} className="btn btn-danger">Google Login</button>
+                            <button onClick={handleResetPassword} className="btn btn-danger">ResetPassword</button>
                         </div>
                     </section>
                 </div>
