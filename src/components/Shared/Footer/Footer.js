@@ -94,7 +94,7 @@ const Footer = () => {
                     className="text-center p-3 copy-right"
                 >
                     © 2021 Copyright:
-                    <Link to={{ pathname: "https://www.linkedin.com/in/syedhasibrahman/" }} target="_blank" >Syed Hasibur Rahman</Link>
+                    <Link className="text-danger" to={{ pathname: "https://www.linkedin.com/in/syedhasibrahman/" }} target="_blank" >Syed Hasibur Rahman</Link>
 
                 </div>
                 {/* <!-- Copyright --> */}

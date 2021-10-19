@@ -4,17 +4,32 @@ This project was Create
 
 ## Available Scripts
 
-### I have used Bootstrap with React to make this Web Aplication.
+* HTML, HTML5, CSS, CSS3
+* Bootstrap 5 (v5.1.3)
+* React JS
+* React Router
+* Firebase
 
-### Also I have used React Router in this application.
+### I have learn a lot of new thing by doing this project :heart_eyes:
 
-### There is Five directory 
+### React Dynamic data was took me a lot of time and a lot of testing. :blush: 
+
+### There is Six directory 
  * Home
  * Services
  * Blog's
  * About Us
  * Login
  * Contact Us
+
+
+ ### Firebase Authentication
+ * Google firebase authentication SignInwithPopup
+ * Firebase authentication signInWithEmailAndPassword
+ * Firebase authentication sendPasswordResetEmail
+ * Firebase authentication sendEmailVerification
+ * Firebase authentication updateProfile
+
 
 ## Also There is a Header section and Footer secton.
 
