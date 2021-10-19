@@ -90,7 +90,7 @@ const Login = () => {
                                 <p className="mt-3 text-white">Don't have an Account ? <Link to="/Registration" className="text-white"> Create Here</Link></p>
 
                             </form>
-                            <button onClick={handleGoogleLogin} className="btn btn-danger">Google Login</button>
+                            <button onClick={handleGoogleLogin} className="btn btn-danger">Google Login</button> <br />
                             <button onClick={handleResetPassword} className="btn btn-danger">ResetPassword</button>
                         </div>
                     </section>

@@ -3,13 +3,14 @@ import { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification, updateProfile } from "firebase/auth";
 
 const Registration = () => {
     const auth = getAuth();
     const { signInUsingGoogle } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setpassword] = useState('');
+    const [name, setName] = useState('');
     const [error, setError] = useState('');
 
     const [setIsLoading] = useState(true);
@@ -23,7 +24,9 @@ const Registration = () => {
             })
             .finally(() => setIsLoading(false));
     }
-
+    const handleNameChange = e => {
+        setName(e.target.value);
+    }
     const handleEmailchange = e => {
         setEmail(e.target.value);
     }
@@ -50,9 +53,16 @@ const Registration = () => {
                 history.push(redirect_uri);
                 console.log(user);
                 setError('');
+                setUserName();
             })
             .catch(error => {
                 setError(error.message);
+            })
+    }
+    const setUserName = () => {
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => {
+
             })
     }
     const verifyEmail = () => {
@@ -77,7 +87,7 @@ const Registration = () => {
 
                                 <div className="form-group">
                                     <label>Full Name</label>
-                                    <input type="text" placeholder="Full Name" className="form-control" />
+                                    <input onBlur={handleNameChange} type="text" placeholder="Full Name" className="form-control" />
                                 </div>
                                 <div className="form-group">
                                     <label>Email</label>
