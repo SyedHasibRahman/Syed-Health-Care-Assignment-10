@@ -41,7 +41,7 @@ const Login = () => {
                 // Signed in 
                 const user = result.user;
                 history.push(redirect_uri);
-                console.log(user);
+                alert("Login Successful Welcome!", user.displayName)
                 // ... 
             })
             .catch((error) => {

@@ -15,7 +15,7 @@ const Registration = () => {
     const [setIsLoading] = useState(true);
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/home';
+    const redirect_uri = location.state?.from || '/';
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {
@@ -37,7 +37,6 @@ const Registration = () => {
     const handleRegistration = (e) => {
         const paswd = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
         e.preventDefault();
-        console.log(email, password);
         if (password.length < 7) {
             setError('Password should be at least 7 characters');
             return;
@@ -48,9 +47,8 @@ const Registration = () => {
         }
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
-                const user = result.user;
                 history.push(redirect_uri);
-                console.log(user);
+                window.location.reload();
                 setError('');
                 setUserName();
                 verifyEmail();
@@ -102,7 +100,7 @@ const Registration = () => {
 
                                 <input type="submit" value="Registration" className="btn btn-block btn-danger rounded-pill mt-3" />
 
-                                <p className="mt-3 text-white">Already have an Account ? <Link to="/login" className="text-white"> Create Here</Link></p>
+                                <p className="mt-3 text-white">Already have an Account ? <Link to="/login" className="text-white"> Login Here</Link></p>
 
                             </form>
                             <button onClick={handleGoogleLogin} className="btn btn-danger">Google Login</button>

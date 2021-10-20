@@ -5,7 +5,7 @@ const Blog = (props) => {
     // console.log(props.blog);
     return (
         <div>
-            <div className="col service-card mb-5">
+            <div className="col mb-5">
                 <div className="card">
                     <img src={img} className="card-img-top p-3" alt="..." />
                     <div className="card-body">
