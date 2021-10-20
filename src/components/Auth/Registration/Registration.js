@@ -12,7 +12,6 @@ const Registration = () => {
     const [password, setpassword] = useState('');
     const [name, setName] = useState('');
     const [error, setError] = useState('');
-
     const [setIsLoading] = useState(true);
     const location = useLocation();
     const history = useHistory();
@@ -36,39 +35,38 @@ const Registration = () => {
     }
     // 
     const handleRegistration = (e) => {
+        const paswd = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
         e.preventDefault();
         console.log(email, password);
-        if (password.length < 6) {
-            setError('Password should be at least 6 characters');
+        if (password.length < 7) {
+            setError('Password should be at least 7 characters');
             return;
         }
-        if (!/(?=.*[a-zA-Z])/.test(password)) {
-            setError('should contain at least one lower and one upper case');
+        if (!paswd.test(password)) {
+            setError('should contain at least 1 lower and 1 upper case 1 Special Charector');
             return;
         }
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 const user = result.user;
-                verifyEmail();
                 history.push(redirect_uri);
                 console.log(user);
                 setError('');
                 setUserName();
+                verifyEmail();
             })
             .catch(error => {
                 setError(error.message);
             })
     }
     const setUserName = () => {
-        updateProfile(auth.currentUser, { displayName: name })
-            .then(result => {
-
-            })
+        updateProfile(auth.currentUser,
+            { displayName: name })
+            .then(result => { })
     }
     const verifyEmail = () => {
         sendEmailVerification(auth.currentUser)
             .then(result => {
-                console.log(result);
             })
     }
     return (
